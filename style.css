@@ -1,9 +1,5 @@
 /* global */
 @font-face {
-    font-family: LaBelle;
-    src: url(https://jacekjeznach.com/wp-content/themes/new/fonts/LaBelleAurore-Regular.woff2);
-  }
-@font-face {
     font-family: LuloClean;
     src: url(/assets/fonts/Lulo\ Clean\ One.otf);
   }
@@ -37,12 +33,11 @@ body{
 /* Title */
 .maintext {
     display: flex;
-    z-index: 5;
+    z-index: 10;
     position: absolute;
     margin: 0 auto;
     height: auto (+10px);
     text-align: center;
-    width: 930px;
 
     color: #ffffff;
     text-shadow: 0 0 30px #000000, 0 0 30px #000000;
@@ -62,7 +57,7 @@ body{
   .parallax-container {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 667px;
     -webkit-perspective: 1000;
     -moz-perspective: 1000px;
     transform-style: preserve-3d;
@@ -106,11 +101,14 @@ body{
 
 .biotext {
     color: #F4F5F7;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     letter-spacing: 4px;
     font-weight: 100;
     font-family: sans-serif;
     margin: auto;
+    width: 50%;
+    text-align: center;
+    
 }
 
 
