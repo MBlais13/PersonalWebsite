@@ -1,10 +1,14 @@
 /* global */
 @font-face {
+    font-family: LaBelle;
+    src: url(https://jacekjeznach.com/wp-content/themes/new/fonts/LaBelleAurore-Regular.woff2);
+  }
+@font-face {
     font-family: LuloClean;
-    src: url(assets/fonts/Lulo\ Clean\ One.otf);
+    src: url(/assets/fonts/Lulo\ Clean\ One.otf);
   }
 
-@import url(assets/parallax.js);
+@import url(/assets/parallax.js);
 
 body{
     margin: 0;
@@ -18,7 +22,7 @@ body{
 
 /* Section-1 */
 .section-1 {
-    background-image: url(assets/images/red\ mountains\ background.jpg);
+    background-image: url(/assets/images/red\ mountains\ background.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,14 +36,15 @@ body{
 }
 /* Title */
 .maintext {
+    display: flex;
     z-index: 5;
-    color: #ffffff;
     position: absolute;
     margin: 0 auto;
     height: auto (+10px);
     text-align: center;
     width: 930px;
 
+    color: #ffffff;
     text-shadow: 0 0 30px #000000, 0 0 30px #000000;
     font-family: "LuloClean";
     font-weight: 600;
@@ -49,25 +54,63 @@ body{
     padding: 20px;
 }
 
+.parallax-base div {
+    opacity: 0.7;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  .parallax-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000px;
+    transform-style: preserve-3d;
+  }
+  
+  .parallax-base {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+  
+
+
+
+
 
 
 
 /* Section-2 */
 .section-2 {
-    background-color: #D2D2D3;
+    background-color: #181A1B;
     height: 700px;
+    width: 100%;
+    margin: auto;
+    padding: auto;
 }
 .ProfilePic {
-    content: url(assets/images/mblaisIRL.png);
+    content: url(/assets/images/mblaisIRL.png);
     height: 200px;
     width: 200px;
     margin: auto;
     margin-top: 3em;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
 }
 
-.testtext {
+.biotext {
+    color: #F4F5F7;
+    font-size: 1.6rem;
+    letter-spacing: 4px;
+    font-weight: 100;
+    font-family: sans-serif;
     margin: auto;
-    margin-top: 30em;
 }
 
 
