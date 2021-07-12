@@ -1,25 +1,22 @@
-/****************
-	  MOUSE MOVE
-	***************/	
-	$('html').mousemove(function(e){
+function cssParallax(cont, el, radiusVal){
+	$(cont).mousemove(function(event) {
 		
-		var wx = $(window).width();
-		var wy = $(window).height();
+		cx = Math.ceil($(window).width() / 2.0);
+		cy = Math.ceil($(window).height() / 2.0);
+		dx = event.pageX - cx;
+		dy = event.pageY - cy;
 		
-		var x = e.pageX - this.offsetLeft;
-		var y = e.pageY - this.offsetTop;
-		
-		var newx = x - wx/2;
-		var newy = y - wy/2;
-		
-		$('span').text(newx + ", " + newy);
-		
-		$('#wrapper div').each(function(){
-			var speed = $(this).attr('data-speed');
-			$(this).css({
-			   'left' : newx*speed,
-			   'top' : newy*speed
-			});
-		});
-		
+		tiltx = (dy / cy);
+		tilty = - (dx / cx);
+		radius = Math.sqrt(Math.pow(tiltx,2) + Math.pow(tilty,2));
+		degree = (radius * radiusVal);
+  
+		$(el, cont).css('-webkit-transform','rotate3d(' + tiltx + ', ' + tilty + ', 0, ' + degree + 'deg)');
+		$(el, cont).css('transform','rotate3d(' + tiltx + ', ' + tilty + ', 0, ' + degree + 'deg)');
 	});
+  }
+  
+  $(document).ready(function() {
+	cssParallax('.parallax-container', '.parallax-base', 20);
+	cssParallax('.parallax-container.first', '.parallax-base', 20);
+  });
