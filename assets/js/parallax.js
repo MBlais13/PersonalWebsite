@@ -2,7 +2,7 @@ function cssParallax(cont, el, radiusVal){
 	$(cont).mousemove(function(event) {
 		
 		cx = Math.ceil($(window).width() / 2.0);
-		cy = Math.ceil($(window).height() / 2.0);
+		cy = Math.ceil($(window).height() / 2.5);
 		dx = event.pageX - cx;
 		dy = event.pageY - cy;
 		
