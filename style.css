@@ -107,7 +107,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: #F4F5F7;
-  color: var(--text-color);
+  color: var(--text-color-light);
 }
 
 h1, h2, h3, h4 {
