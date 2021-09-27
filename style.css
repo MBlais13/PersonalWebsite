@@ -24,8 +24,8 @@ body{
   --first-color-second: #5E81AC;
   --first-color-alt: #5E81AC;
   --first-color-lighter: #333B44;
-  --title-color: #e7eaee;
-  --text-color: #6a787c;
+  --title-color: #f0eefc;
+  --text-color: #6d6a7c;
   --text-color-light: #b0a99f;
   --input-color: #f0eefc;
   --body-color: #fbfbfe;
@@ -42,6 +42,7 @@ body{
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
   /*========== Font weight ==========*/
+  --font-not-bold: 200;
   --font-medium: 500;
   --font-semi-bold: 600;
   /*========== Margenes Bottom ==========*/
@@ -417,11 +418,11 @@ img {
 
 /*========== Frontend ==========*/
 .skills__html {
-  width: 42%;
+  width: 70%;
 }
 
 .skills__css {
-  width: 69%;
+  width: 80%;
 }
 
 /*========== Backend ==========*/
@@ -475,15 +476,73 @@ img {
   right: 0;
   margin: auto;
   margin-top: 10rem;
+  display: block;
+  background-color: var(--bg-color-2);
 }
-.project__title {
-  height: fit-content;
-  width: fit-content;
+
+
+.sec_left {
+  float: left;
+  width: 50%;
+  height: 100%;
+
+  font-weight: var(--font-not-bold);
+  text-align: center;
+}.project__title {
+  padding-top: 25px;
+  padding-bottom: 15px;
+  width: 100%;
+  font-size: var(--h2-font-size);
+  margin: auto;
+}.project__desc {
+  width: 100%;
+  margin: auto;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-not-bold);
+  color: var(--text-color-light);
+}.project__lowerdesc {
+  width: 100%;
+  margin: auto;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-not-bold);
+  color: var(--text-color-light);
+}
+
+
+.sec_right {
+  float: right;
+  height: 100%;
+  width: 40%;
+  position: relative;
+  display: block;
+  
+}.projectimg {
+  border-radius: 15px;
+  max-width: 100%;
+  margin: auto;
+  vertical-align: middle;
+  width: max-content;
+  image-rendering: optimizeSpeed;
+  background-repeat: no-repeat;
+  margin: auto;
 }
 
 .project__container:hover {
     border: 1.9px #d4ed31b9 dashed;
 }
+
+
+.codetext {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #dd496e;
+  background-color: #2b141a;
+  border-radius: 4px;
+}
+
+
+
+
 
 
 /*==================== -CONTACT- ====================*/
@@ -606,7 +665,6 @@ img {
   background-size: cover;
   background-position: top center;
   backdrop-filter: blur(20px);
-  background-color: coral;
   padding: 2rem 0 3rem;
 }
 
