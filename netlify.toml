@@ -2,4 +2,4 @@
     from = "/index.html"
     to = "/Pages/HomePage.html"
     status = 301
-    force = false
+    force = true
