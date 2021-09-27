@@ -1,5 +1,5 @@
 [[redirects]]
-    from = "/index.html"
+    from = "index.html"
     to = "/Pages/HomePage.html"
     status = 301
     force = true
