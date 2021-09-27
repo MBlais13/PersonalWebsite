@@ -404,7 +404,7 @@ img {
 
 .skills__close .skills__list {
   height: 0px;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .skills__open .skills__list {
