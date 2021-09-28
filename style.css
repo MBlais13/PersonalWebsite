@@ -12,7 +12,7 @@ body{
 
 /*========== FONTS ==========*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-@font-face { font-family: LuloClean; src: url(/assets/fonts/Lulo\ Clean\ One.otf);}
+@font-face { font-family: LuloClean; src: url(assets/fonts/Lulo\ Clean\ One.otf);}
 /*==================== VARIABLES CSS ====================*/
 :root {
   --header-height: 3rem;
@@ -174,7 +174,7 @@ img {
 
 /*==================== -HOME PAGE- ====================*/
 .section-1 {
-    background-image: url(/assets/images/red\ mountains\ background.jpg);
+    background-image: url(assets/images/red\ mountains\ background.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -241,7 +241,7 @@ img {
 }
 
 .ProfilePic {
-    content: url(/assets/images/mblaisIRL.png);
+    content: url(assets/images/mblaisIRL.png);
     height: 200px;
     width: 200px;
     margin: auto;
@@ -651,7 +651,7 @@ img {
 }
 
 .footer__bg {
-  background-image: url(/assets/images/red\ mountains\ background.jpg);
+  background-image: url(assets/images/red\ mountains\ background.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
