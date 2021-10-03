@@ -2,6 +2,7 @@
 <html lang="en">
   <script src="assets/js/skillsmenu.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/338f76498c.js" crossorigin="anonymous"></script>
 
   <head>
     <meta charset="UTF-8" />
@@ -16,7 +17,7 @@
     <script src="assets/js/parallax.js"></script>
     <script src="assets/js/smoothscroll.js"></script>
     <!--==================== CSS ====================-->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="HomePage.css" />
 
     <title>Dev Build - Michael Blais</title>
     <link
@@ -74,7 +75,7 @@
     <div
       class="section-1"
       id="home"
-      style="display: flex; top: auto; left: auto"
+      style="display: flex; top: auto; left: auto; background-image: url(assets/images/red\ mountains\ background.jpg);"
     >
       <section class="parallax-container">
         <div
@@ -89,7 +90,7 @@
           <h1 class="maintext">HELLO, I'M MICHAEL BLAIS</h1>
         </div>
       </section>
-      <h4 style="margin-bottom: 15px; align-self: flex-end;">Scroll Down :)</h4>
+      <h4 class="scrolldowntext">Scroll Down :)</h4>
     </div>
 
 <!--==================== ABOUT ME ====================-->
@@ -100,15 +101,16 @@
           class="ProfilePic"
           src="assets/images/mblaisIRL.png"
           alt="MBlais Photo"
+          style="content: url(assets/images/mblaisIRL.png);"
         />
       </div>
-
           <h3 class="biotext">
-            I'm a 16yr old developer based in Canada🍁 with over 2 years of experience in the game-development, 3d modeling and software industry. 
+            I'm a 16yr old developer based in Canada🍁 with over 3 years of experience in the game-development, 3d modeling and software industry.
         </h3>
+        <h3 class="learnmoretext">learn more about me <a target="_blank" href="#more"><code class="codetext">>here</code></a></h3>
       <div class="about__info">
         <div>
-            <span class="about__info-title">2+</span>
+            <span class="about__info-title">3+</span>
             <span class="about__info-name">Years <br> experience</span>
         </div>
 
@@ -119,7 +121,7 @@
 
         <div>
             <span class="about__info-title">0</span>
-            <span class="about__info-name">Shits Taken <br>👏</span>
+            <span class="about__info-name">Idk what to <br>put here👏</span>
         </div>
     </div>
 
@@ -264,7 +266,7 @@
         <div class="sec_left">
           <h1 class="project__title">Personal Website</h1>
           <h3 class="project__desc">My personal portfolio website.</h3>
-          <p class="project__lowerdesc">can find it open source <a target="_blank" href="https://github.com/MBlais13/PersonalWebsite"><code class="codetext">>here</code></a></p>
+          <p class="project__lowerdesc">you can find it open source <a target="_blank" href="https://github.com/MBlais13/PersonalWebsite"><code class="codetext">>here</code></a></p>
         </div>
         <div class="sec_right">
           <img class="projectimg" src="assets/images/WebsiteImagePreview.png" alt="project image">
@@ -286,13 +288,41 @@
     </div>
       
 <!--==================== CONTACT ====================-->
-    <div class="section-5" id="contact" style="display: flex"></div>
+    <div class="section-5" id="contact" style="display: flex">
+      <h2 class="section__title" style="display: flex; position: relative; justify-content: center; width: 100%;">Contact</h2>
+      <h3 class="secondtitle">Get in touch with me through these platforms.</h3>
+      <div style="display: inline-block;" class="contact-container">
+        <ul style="justify-content: center; padding-left: 0px;" class="contact__links">
+          <li>
+            <p class="contact__link"><a class="bt-text" href="https://discord.gg/Hejb485">Discord</a></p>
+          </li>
+          <li>
+            <p class="contact__link"><a class="bt-text" href="https://twitter.com/MBlais13">Twitter</a></p>
+          </li>
+          <li>
+            <p class="contact__link"><a class="bt-text" href="https://github.com/mblais13">Github</a></p>
+          </li>
+        </ul>
+        <ul style="justify-content: center; padding-left: 0px;" class="contact__links">
+          <li>
+            <p class="contact__link"><a class="bt-text" href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=+michaelblais13@gmail.com">Email</a></p>
+          </li>
+          <li>
+            <p class="contact__link"><a class="bt-text" href="https://www.youtube.com/channel/UCYl43KXQj3bgm6PMk8Xz18w">Youtube</a></p>
+          </li>
+          <li>
+            <p class="contact__link"><a class="bt-text" href="https://www.linkedin.com/in/mblais13/">LinkedIn</a></p>
+          </li>
+        </ul>
+      </div>
+
+    </div>
   </body>
 
 
   <!--==================== FOOTER ====================-->
   <footer class="footer">
-    <div class="footer__bg">
+    <div class="footer__bg" style="background-image: url(assets/images/red\ mountains\ background.jpg);">
       <div class="footer__container container grid">
         <div>
           <h1 class="footer__title">Michael Blais</h1>
@@ -338,6 +368,7 @@
           </a>
         </div>
       </div>
+      <p style="width: 45%; text-align: end; align-self: center; margin: auto;">designed with ♥ by <a style="color: #5E81AC;" target="_blank" href="https://twitter.com/MBlais13">Mblais13#7694</a></p>
     </div>
   </footer>
 </html>
