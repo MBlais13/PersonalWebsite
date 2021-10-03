@@ -174,7 +174,6 @@ img {
 
 /*==================== -HOME PAGE- ====================*/
 .section-1 {
-    background-image: url(assets/images/red\ mountains\ background.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -227,6 +226,29 @@ img {
     margin: auto;
   }
 
+  .scrolldowntext {
+    margin-bottom: 15px;
+    align-self: flex-end;
+    -webkit-animation: sdb10 2s infinite;
+    animation: sdb10 2s infinite;
+  }
+
+  @-webkit-keyframes sdb10 {
+    0% {
+      -webkit-transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      -webkit-transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 
 
 /*==================== -ABOUT ME- ====================*/
@@ -241,7 +263,6 @@ img {
 }
 
 .ProfilePic {
-    content: url(assets/images/mblaisIRL.png);
     height: 200px;
     width: 200px;
     margin: auto;
@@ -271,6 +292,22 @@ img {
     margin-top: 20rem;
   }
 
+  .learnmoretext {
+    display: absolute;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    color: #bcbac4;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+    width: 80%;
+    margin-top: 26rem;
+  }
 
 .about__info {
   width: 30rem;
@@ -309,6 +346,10 @@ img {
     /* background-color: var(--bg-color); */
     background-color: var(--bg-color-2);
     height: 43rem;
+}
+
+.skills__arrow {
+  display: none;
 }
 
 /*========== Skill Boxes ==========*/
@@ -533,10 +574,78 @@ img {
 /*==================== -CONTACT- ====================*/
 .section-5 {
   background-color: var(--bg-color-2);
-  height: 5rem;
+  height: 30rem;
 }
 
+.contact__links {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+}
 
+.secondtitle {
+    display: absolute;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+
+    color: #bcbac4;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+    width: 35%;
+    margin-top: 5rem;
+}
+
+.contact-container {
+  display: absolute;
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  margin-top: 9rem;
+  width: 100%;
+  height: 15rem;
+}
+
+.bt-text {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  color: var(--title-color);
+  font-weight: var(--big-font-size);
+  line-height: 2.5rem;
+  justify-content: center;
+  border: .2rem solid #bcbac4;
+  box-sizing: border-box;
+  border-radius: 5px;
+}.bt-text:hover{
+  background-color: var(--first-color);
+  border: .2rem solid var(--first-color);
+  color: var(--bg-color-2);
+  animation: ani1 0.35s;
+  animation-iteration-count: 1;
+}
+
+.contact__link {
+  height: 3rem;
+  width: 8.5rem;
+}
+
+@-webkit-keyframes ani1 {
+  0% {
+    background-color: #ffffff00;
+    border: .2rem solid #bcbac4;
+  }
+  100% {
+    background-color: var(--first-color);
+    border: .2rem solid var(--first-color);
+  }
+}
 
 
 /*==================== NAV ====================*/
@@ -651,7 +760,6 @@ img {
 }
 
 .footer__bg {
-  background-image: url(assets/images/red\ mountains\ background.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -700,7 +808,7 @@ img {
 }
 
 .footer__social {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin-right: var(--mb-1-5);
 }
 
@@ -762,13 +870,22 @@ img {
 /* For small devices */
 @media screen and (max-width: 420px) {
  
+  
+  .contact__links {
+    display: flex;
+    flex-direction: column-reverse;
+    column-gap: 0.01rem;
+  }
+
   .section-3 {
     /* background-color: var(--bg-color); */
     background-color: var(--bg-color-2);
     height: 60rem;
 }
 
-
+.learnmoretext {
+  margin-top: 27rem;
+}
 
 /*==================== -PORTFOLIO- ====================*/
 .section-4 {
@@ -837,9 +954,32 @@ img {
   }
 }
 
+/* For small-medium devices */
+@media screen and (max-width: 650px) {
+  .project__container {
+    width: 90%;
+    border-radius: 12px;
+  }
+  .biotext {
+    width: 80%;
+  }
+  .secondtitle {
+    width: 60%;
+  }
+  .contact-container {
+    width: fit-content;
+    margin: auto;
+    margin-top: 10rem;
+  }
+  .contact__links {
+    flex-direction: row;
+  }
+}
+
 /* For medium devices */
 @media screen and (min-width: 568px) {
 
+  
   .home__content {
     grid-template-columns: max-content 1fr 1fr;
   }
@@ -992,6 +1132,7 @@ img {
   }
   .footer__socials {
     justify-self: flex-end;
+    margin-top: 0.8rem;
   }
   .footer__copy {
     margin-top: 4.5rem;
