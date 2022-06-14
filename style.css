@@ -9,10 +9,25 @@ body{
     padding-bottom: 0px;
 } */
 
+/*
+loader
+*/
+.loader-container {
+  z-index: 100;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #2b141a;
+  margin: auto;
+}.loadingtext {
+  margin: auto
+}
+
 
 /*========== FONTS ==========*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-@font-face { font-family: LuloClean; src: url(assets/fonts/Lulo\ Clean\ One.otf);}
+@font-face { font-family: LuloClean; src: url(/assets/fonts/Lulo\ Clean\ One.otf);}
 /*==================== VARIABLES CSS ====================*/
 :root {
   --header-height: 3rem;
@@ -310,7 +325,7 @@ img {
   }
 
 .about__info {
-  width: 30rem;
+  width: 15rem;
   position: inherit;
   display: flex;
   justify-content: space-evenly;
@@ -462,6 +477,10 @@ img {
 /*========== Backend ==========*/
 .skills__lua {
   width: 60%;
+}
+
+.skills__Java {
+  width: 30%;
 }
 
 .skills__python {
