@@ -26,8 +26,7 @@ loader
 
 
 /*========== FONTS ==========*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-@font-face { font-family: LuloClean; src: url(/assets/fonts/Lulo\ Clean\ One.otf);}
+@font-face { font-family: LuloClean; src: url(/assets/fonts/lulo-clean-one.otf);}
 /*==================== VARIABLES CSS ====================*/
 :root {
   --header-height: 3rem;
