@@ -2,7 +2,7 @@
 
 <a href="https://mblais-portfolio.netlify.app/">
 <p align="center">
-  <img src="assets/images/WebsiteImagePreview.png">
+  <img src="assets/images/WebsiteImagePreview.webp">
 </p>
 </a>
 <p align="center">  
