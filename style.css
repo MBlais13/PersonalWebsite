@@ -686,6 +686,9 @@ img {
 
 @media screen and (max-width: 767px) {
   .nav__menu {
+    display: none;
+
+
     position: fixed;
     box-sizing: border-box;
     margin: 0;
@@ -934,6 +937,7 @@ img {
     margin-right: var(--mb-1);
   }
   .nav__menu {
+    display: none;
     padding: 2rem .25rem 4rem;
     border-radius: .5rem .5rem 0 0;
   }
@@ -1067,6 +1071,7 @@ img {
     column-gap: 2rem;
   }
   .nav__menu {
+    display: none;
     margin-left: auto;
     border-radius: .5rem .5rem 0 0;
   }
@@ -1205,4 +1210,3 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
