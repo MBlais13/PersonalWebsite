@@ -740,6 +740,7 @@ img {
 
 /* Change background header */
 .scroll-header {
+  display: none;
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -1174,7 +1175,6 @@ img {
 /* For large devices */
 @media screen and (min-width: 1024px) {
   
-  .header,
   .main,
   .footer__container {
     padding: 0;
