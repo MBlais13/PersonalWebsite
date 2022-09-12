@@ -66,7 +66,7 @@ loader
   --mb-1: 1rem;
   --mb-1-5: 1.5rem;
   --mb-2: 2rem;
-  --mb-2-5: 2.5rem;
+  --mb-2-5: 1.2rem;
   --mb-3: 3rem;
   /*========== z index ==========*/
   --z-tooltip: 10;
@@ -414,7 +414,7 @@ img {
 }
 
 .skills__list {
-  row-gap: 1.5rem;
+  row-gap: 0.1rem;
   padding-left: 2.7rem;
 }
 
@@ -422,6 +422,9 @@ img {
   display: flex;
   justify-content: space-between;
   margin-bottom: var(--mb-0-5);
+  border-radius: 0.2rem;
+  background-color: var(--bg-color-1);
+  padding: 0.2rem;
 }
 
 .skills__name {
@@ -592,7 +595,7 @@ img {
 /*==================== -CONTACT- ====================*/
 .section-5 {
   background-color: var(--bg-color-2);
-  height: 30rem;
+  height: 20rem;
 }
 
 .contact__links {
@@ -627,7 +630,7 @@ img {
   left: 0;
   margin-top: 9rem;
   width: 100%;
-  height: 15rem;
+  height: 8rem;
 }
 
 .bt-text {
