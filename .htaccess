@@ -1,2 +1,1 @@
-RewriteBase "/<PersonalWebsite>/"
 ErrorDocument 404 /pages/errorpage.html
